@@ -11,7 +11,7 @@ test:
     override:
         # Place here any automated test you would like to run after the build (unit tests, boot up a VM and collect output...)
         - npm install
-        mocha tests --recursive --watch
+        - mocha tests --recursive --watch
         
           
  
