@@ -1,0 +1,18 @@
+machine:
+  node:
+    # Circle will use node v4.0.0
+    version: 4.0.0
+    
+dependencies:
+    override:
+      - npm install
+     
+test:
+    override:
+        # Place here any automated test you would like to run after the build (unit tests, boot up a VM and collect output...)
+        - npm install
+        mocha tests --recursive --watch
+        
+          
+ 
+        
